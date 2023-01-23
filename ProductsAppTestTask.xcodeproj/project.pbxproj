@@ -23,6 +23,8 @@
 		0027F8F0297EC54A000DAD0D /* ProductsRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8EF297EC54A000DAD0D /* ProductsRepositoryProtocol.swift */; };
 		0027F8F2297EC5EB000DAD0D /* ProductsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F1297EC5EB000DAD0D /* ProductsRepository.swift */; };
 		0027F8F4297EC80F000DAD0D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F3297EC80F000DAD0D /* Product.swift */; };
+		0027F8F6297ECCB6000DAD0D /* GetAllProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */; };
+		0027F8F8297ECDBF000DAD0D /* GetProductUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		0027F8EF297EC54A000DAD0D /* ProductsRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryProtocol.swift; sourceTree = "<group>"; };
 		0027F8F1297EC5EB000DAD0D /* ProductsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepository.swift; sourceTree = "<group>"; };
 		0027F8F3297EC80F000DAD0D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProductsUseCase.swift; sourceTree = "<group>"; };
+		0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +196,8 @@
 		0027F8DE297EB4D1000DAD0D /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */,
+				0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -390,6 +396,8 @@
 			files = (
 				0027F8AE297EAF1F000DAD0D /* ViewController.swift in Sources */,
 				0027F8EB297EB886000DAD0D /* APIError.swift in Sources */,
+				0027F8F8297ECDBF000DAD0D /* GetProductUseCase.swift in Sources */,
+				0027F8F6297ECCB6000DAD0D /* GetAllProductsUseCase.swift in Sources */,
 				0027F8F4297EC80F000DAD0D /* Product.swift in Sources */,
 				0027F8AA297EAF1F000DAD0D /* AppDelegate.swift in Sources */,
 				0027F8AC297EAF1F000DAD0D /* SceneDelegate.swift in Sources */,
