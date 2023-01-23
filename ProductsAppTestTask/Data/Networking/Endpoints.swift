@@ -8,12 +8,12 @@
 import Foundation
 
 struct Endpoints {
-    func host() -> String {
+    static func host() -> String {
         return "https://fakestoreapi.com/"
     }
 }
 
 extension Endpoints {
-    func GET_products() -> String { return "\(host())/products" }
-    func GET_product(with id: String) -> String { return "\(host())/products/\(id)" }
+    static func GET_products() -> String { return "\(host())/products" }
+    static func GET_product(with id: String) -> String { return "\(host())/products/\(id)" }
 }
