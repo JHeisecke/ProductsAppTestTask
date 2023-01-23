@@ -8,9 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0027F8AA297EAF1F000DAD0D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8A9297EAF1F000DAD0D /* AppDelegate.swift */; };
-		0027F8AC297EAF1F000DAD0D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8AB297EAF1F000DAD0D /* SceneDelegate.swift */; };
-		0027F8AE297EAF1F000DAD0D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8AD297EAF1F000DAD0D /* ViewController.swift */; };
-		0027F8B1297EAF1F000DAD0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0027F8AF297EAF1F000DAD0D /* Main.storyboard */; };
+		0027F8AE297EAF1F000DAD0D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8AD297EAF1F000DAD0D /* LoginViewController.swift */; };
+		0027F8B1297EAF1F000DAD0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0027F8AF297EAF1F000DAD0D /* Login.storyboard */; };
 		0027F8B3297EAF22000DAD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0027F8B2297EAF22000DAD0D /* Assets.xcassets */; };
 		0027F8B6297EAF22000DAD0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0027F8B4297EAF22000DAD0D /* LaunchScreen.storyboard */; };
 		0027F8C1297EAF22000DAD0D /* ProductsAppTestTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8C0297EAF22000DAD0D /* ProductsAppTestTaskTests.swift */; };
@@ -25,6 +24,10 @@
 		0027F8F4297EC80F000DAD0D /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F3297EC80F000DAD0D /* Product.swift */; };
 		0027F8F6297ECCB6000DAD0D /* GetAllProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */; };
 		0027F8F8297ECDBF000DAD0D /* GetProductUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */; };
+		005D55BB297F345900FD5B6D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55BA297F345900FD5B6D /* LoginViewModel.swift */; };
+		0087E4E0297F2F1000F516F9 /* Modak-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */; };
+		0087E4E3297F314B00F516F9 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 0087E4E2297F314B00F516F9 /* SwinjectStoryboard */; };
+		0087E4E5297F318400F516F9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087E4E4297F318400F516F9 /* DIContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +50,8 @@
 /* Begin PBXFileReference section */
 		0027F8A6297EAF1F000DAD0D /* ProductsAppTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProductsAppTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0027F8A9297EAF1F000DAD0D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0027F8AB297EAF1F000DAD0D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0027F8AD297EAF1F000DAD0D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0027F8B0297EAF1F000DAD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0027F8AD297EAF1F000DAD0D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		0027F8B0297EAF1F000DAD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		0027F8B2297EAF22000DAD0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0027F8B5297EAF22000DAD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0027F8B7297EAF22000DAD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -66,6 +68,9 @@
 		0027F8F3297EC80F000DAD0D /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProductsUseCase.swift; sourceTree = "<group>"; };
 		0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductUseCase.swift; sourceTree = "<group>"; };
+		005D55BA297F345900FD5B6D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Modak-Regular.ttf"; sourceTree = "<group>"; };
+		0087E4E4297F318400F516F9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0087E4E3297F314B00F516F9 /* SwinjectStoryboard in Frameworks */,
 				0027F8E9297EB817000DAD0D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -169,9 +175,7 @@
 				0027F8E2297EB505000DAD0D /* Home */,
 				0027F8E1297EB4FE000DAD0D /* Login */,
 				0027F8DD297EB49F000DAD0D /* Resources */,
-				0027F8AF297EAF1F000DAD0D /* Main.storyboard */,
 				0027F8B4297EAF22000DAD0D /* LaunchScreen.storyboard */,
-				0027F8AD297EAF1F000DAD0D /* ViewController.swift */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -180,7 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				0027F8A9297EAF1F000DAD0D /* AppDelegate.swift */,
-				0027F8AB297EAF1F000DAD0D /* SceneDelegate.swift */,
+				0087E4E4297F318400F516F9 /* DIContainer.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -188,6 +192,7 @@
 		0027F8DD297EB49F000DAD0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */,
 				0027F8B2297EAF22000DAD0D /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -222,6 +227,9 @@
 		0027F8E1297EB4FE000DAD0D /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0027F8AF297EAF1F000DAD0D /* Login.storyboard */,
+				0027F8AD297EAF1F000DAD0D /* LoginViewController.swift */,
+				005D55BA297F345900FD5B6D /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -275,6 +283,7 @@
 			name = ProductsAppTestTask;
 			packageProductDependencies = (
 				0027F8E8297EB817000DAD0D /* Alamofire */,
+				0087E4E2297F314B00F516F9 /* SwinjectStoryboard */,
 			);
 			productName = ProductsAppTestTask;
 			productReference = 0027F8A6297EAF1F000DAD0D /* ProductsAppTestTask.app */;
@@ -350,6 +359,7 @@
 			mainGroup = 0027F89D297EAF1F000DAD0D;
 			packageReferences = (
 				0027F8E7297EB817000DAD0D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				0087E4E1297F314B00F516F9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
 			);
 			productRefGroup = 0027F8A7297EAF1F000DAD0D /* Products */;
 			projectDirPath = "";
@@ -367,9 +377,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0087E4E0297F2F1000F516F9 /* Modak-Regular.ttf in Resources */,
 				0027F8B6297EAF22000DAD0D /* LaunchScreen.storyboard in Resources */,
 				0027F8B3297EAF22000DAD0D /* Assets.xcassets in Resources */,
-				0027F8B1297EAF1F000DAD0D /* Main.storyboard in Resources */,
+				0027F8B1297EAF1F000DAD0D /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,14 +405,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0027F8AE297EAF1F000DAD0D /* ViewController.swift in Sources */,
+				0027F8AE297EAF1F000DAD0D /* LoginViewController.swift in Sources */,
 				0027F8EB297EB886000DAD0D /* APIError.swift in Sources */,
 				0027F8F8297ECDBF000DAD0D /* GetProductUseCase.swift in Sources */,
 				0027F8F6297ECCB6000DAD0D /* GetAllProductsUseCase.swift in Sources */,
+				0087E4E5297F318400F516F9 /* DIContainer.swift in Sources */,
 				0027F8F4297EC80F000DAD0D /* Product.swift in Sources */,
 				0027F8AA297EAF1F000DAD0D /* AppDelegate.swift in Sources */,
-				0027F8AC297EAF1F000DAD0D /* SceneDelegate.swift in Sources */,
 				0027F8F0297EC54A000DAD0D /* ProductsRepositoryProtocol.swift in Sources */,
+				005D55BB297F345900FD5B6D /* LoginViewModel.swift in Sources */,
 				0027F8ED297EB97E000DAD0D /* Endpoints.swift in Sources */,
 				0027F8E6297EB7FA000DAD0D /* APIClient.swift in Sources */,
 				0027F8F2297EC5EB000DAD0D /* ProductsRepository.swift in Sources */,
@@ -441,12 +453,12 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0027F8AF297EAF1F000DAD0D /* Main.storyboard */ = {
+		0027F8AF297EAF1F000DAD0D /* Login.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				0027F8B0297EAF1F000DAD0D /* Base */,
 			);
-			name = Main.storyboard;
+			name = Login.storyboard;
 			sourceTree = "<group>";
 		};
 		0027F8B4297EAF22000DAD0D /* LaunchScreen.storyboard */ = {
@@ -586,7 +598,7 @@
 				INFOPLIST_FILE = ProductsAppTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -614,7 +626,7 @@
 				INFOPLIST_FILE = ProductsAppTestTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Login;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -756,6 +768,14 @@
 				kind = branch;
 			};
 		};
+		0087E4E1297F314B00F516F9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -763,6 +783,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0027F8E7297EB817000DAD0D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		0087E4E2297F314B00F516F9 /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0087E4E1297F314B00F516F9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
