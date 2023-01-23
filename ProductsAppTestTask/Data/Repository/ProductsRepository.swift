@@ -27,6 +27,13 @@ struct ProductsRepository: ProductsRepositoryProtocol {
     }
     
     func getProduct(with id: String, success: @escaping (Product) -> Void, failure: @escaping (ApiError) -> Void) {
-        
+        api?.request(
+            verb: .get,
+            route: Endpoints.GET_product(with: id),
+            encoding: .default) { (response: Product) in
+                success(response)
+            } failure: { error in
+                failure(error)
+            }
     }
 }
