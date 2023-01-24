@@ -15,7 +15,8 @@ class HomeViewController: UIViewController {
     var viewModel: HomeViewModelProtocol?
     var productList: ProductsList?
     var selectedProduct: Product?
-    
+    var activityIndicator = UIActivityIndicatorView(style: .large)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
@@ -40,10 +41,20 @@ extension HomeViewController {
     
     private func setupUI() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.init(systemName: "cart"), style: .plain, target: self, action: #selector(clearCart))
+        configActivityIndicator()
         setupCollectionView()
     }
     
+    private func configActivityIndicator() {
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(activityIndicator)
+        activityIndicator.color = UIColor(named: "brand-font")
+        activityIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        activityIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+    }
+    
     private func fetchData() {
+        activityIndicator.startAnimating()
         viewModel?.getAllProducts()
     }
     
@@ -57,6 +68,7 @@ extension HomeViewController {
         viewModel?.enableCart.bind(to: navigationItem.rightBarButtonItem!.reactive.isEnabled)
 
         viewModel?.allProducts.observeNext(with: { [weak self] productList in
+            self?.activityIndicator.stopAnimating()
             guard let productList = productList else { return }
             if productList.count > 0 {
                 self?.productList = productList

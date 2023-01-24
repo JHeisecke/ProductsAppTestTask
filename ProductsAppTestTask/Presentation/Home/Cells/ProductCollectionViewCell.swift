@@ -27,8 +27,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     func configure(product: Product) {
         let url = URL(string: product.image!)
+        image.kf.indicatorType = .activity
         KF.url(url)
-            .placeholder(UIImage(named: "store-placeholder"))
             .cacheMemoryOnly()
             .fade(duration: 0.25)
             .set(to: image)
