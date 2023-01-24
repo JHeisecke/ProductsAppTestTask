@@ -14,6 +14,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var ratingLabel: UILabel!
     @IBOutlet weak var ratingView: UIView!
+    @IBOutlet weak var productDetailsView: UIView!
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productDescription: UILabel!
@@ -43,8 +44,17 @@ class ProductDetailViewController: UIViewController {
 
 private extension ProductDetailViewController {
     func setupUI(for product: Product) {
-        title = product.category?.rawValue
+        title = product.category?.rawValue.capitalized
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.init(systemName: "cart"), style: .plain, target: self, action: #selector(clearCart))
+        productDetailsView.layer.cornerRadius = 20
+        productDetailsView.layer.shadowColor = UIColor.black.cgColor
+        productDetailsView.layer.shadowRadius = 4.0
+        productDetailsView.layer.shadowOffset = CGSize(width: 0, height: 1.0)
+        productDetailsView.layer.shadowOpacity = 0.2
+        setupProductDetails(for: product)
+    }
+    
+    func setupProductDetails(for product: Product) {
         productDescription.text = product.description
         productPrice.text = "$\(product.price ?? 0)"
         productTitle.text = product.title

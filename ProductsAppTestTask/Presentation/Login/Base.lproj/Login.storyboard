@@ -52,7 +52,7 @@
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L9J-iI-IGx">
                                                         <rect key="frame" x="0.0" y="16.666666666666686" width="233" height="34"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
@@ -133,13 +133,13 @@
     <resources>
         <image name="store-front" width="42.666667938232422" height="42.666667938232422"/>
         <namedColor name="brand-background">
-            <color red="0.98431372549019602" green="0.83623597527642313" blue="0.68925383619135661" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.98400002717971802" green="0.83600002527236938" blue="0.68900001049041748" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="brand-font">
             <color red="0.23529411764705882" green="0.17254901960784313" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="brand-foreground">
-            <color red="1" green="0.67818713188171387" blue="0.34671592712402344" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.67450980392156867" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
