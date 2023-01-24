@@ -29,6 +29,9 @@
 		005D55CF297F6A9900FD5B6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55CD297F6A9900FD5B6D /* HomeViewController.swift */; };
 		005D55D2297F6AC500FD5B6D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D55D1297F6AC500FD5B6D /* Home.storyboard */; };
 		005D55D5297F6C9600FD5B6D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55D4297F6C9600FD5B6D /* UIViewController+Extensions.swift */; };
+		005D55DC297F770600FD5B6D /* GlacialIndifference-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005D55D8297F770600FD5B6D /* GlacialIndifference-Regular.otf */; };
+		005D55DD297F770600FD5B6D /* GlacialIndifference-Italic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005D55D9297F770600FD5B6D /* GlacialIndifference-Italic.otf */; };
+		005D55DE297F770600FD5B6D /* GlacialIndifference-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005D55DA297F770600FD5B6D /* GlacialIndifference-Bold.otf */; };
 		0087E4E0297F2F1000F516F9 /* Modak-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */; };
 		0087E4E3297F314B00F516F9 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 0087E4E2297F314B00F516F9 /* SwinjectStoryboard */; };
 		0087E4E5297F318400F516F9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087E4E4297F318400F516F9 /* DIContainer.swift */; };
@@ -76,6 +79,9 @@
 		005D55CD297F6A9900FD5B6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		005D55D1297F6AC500FD5B6D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		005D55D4297F6C9600FD5B6D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		005D55D8297F770600FD5B6D /* GlacialIndifference-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Regular.otf"; sourceTree = "<group>"; };
+		005D55D9297F770600FD5B6D /* GlacialIndifference-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Italic.otf"; sourceTree = "<group>"; };
+		005D55DA297F770600FD5B6D /* GlacialIndifference-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Bold.otf"; sourceTree = "<group>"; };
 		0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Modak-Regular.ttf"; sourceTree = "<group>"; };
 		0087E4E4297F318400F516F9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +207,7 @@
 		0027F8DD297EB49F000DAD0D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				005D55D6297F770600FD5B6D /* glacial-indifference */,
 				0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */,
 				0027F8B2297EAF22000DAD0D /* Assets.xcassets */,
 			);
@@ -282,6 +289,16 @@
 				005D55D4297F6C9600FD5B6D /* UIViewController+Extensions.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		005D55D6297F770600FD5B6D /* glacial-indifference */ = {
+			isa = PBXGroup;
+			children = (
+				005D55D8297F770600FD5B6D /* GlacialIndifference-Regular.otf */,
+				005D55D9297F770600FD5B6D /* GlacialIndifference-Italic.otf */,
+				005D55DA297F770600FD5B6D /* GlacialIndifference-Bold.otf */,
+			);
+			path = "glacial-indifference";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -402,7 +419,10 @@
 				005D55D2297F6AC500FD5B6D /* Home.storyboard in Resources */,
 				0027F8B6297EAF22000DAD0D /* LaunchScreen.storyboard in Resources */,
 				0027F8B3297EAF22000DAD0D /* Assets.xcassets in Resources */,
+				005D55DC297F770600FD5B6D /* GlacialIndifference-Regular.otf in Resources */,
+				005D55DE297F770600FD5B6D /* GlacialIndifference-Bold.otf in Resources */,
 				0027F8B1297EAF1F000DAD0D /* Login.storyboard in Resources */,
+				005D55DD297F770600FD5B6D /* GlacialIndifference-Italic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

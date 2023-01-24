@@ -4,7 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>Modak-Regular.ttf</string>
+		<string>GlacialIndifference-Regular</string>
+		<string>GlacialIndifference-Italic</string>
+		<string>GlacialIndifference-Bold</string>
 	</array>
 </dict>
 </plist>
