@@ -25,6 +25,10 @@
 		0027F8F6297ECCB6000DAD0D /* GetAllProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */; };
 		0027F8F8297ECDBF000DAD0D /* GetProductUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */; };
 		005D55BB297F345900FD5B6D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55BA297F345900FD5B6D /* LoginViewModel.swift */; };
+		005D55CA297F666800FD5B6D /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = 005D55C9297F666800FD5B6D /* Bond */; };
+		005D55CF297F6A9900FD5B6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55CD297F6A9900FD5B6D /* HomeViewController.swift */; };
+		005D55D2297F6AC500FD5B6D /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 005D55D1297F6AC500FD5B6D /* Home.storyboard */; };
+		005D55D5297F6C9600FD5B6D /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55D4297F6C9600FD5B6D /* UIViewController+Extensions.swift */; };
 		0087E4E0297F2F1000F516F9 /* Modak-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */; };
 		0087E4E3297F314B00F516F9 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 0087E4E2297F314B00F516F9 /* SwinjectStoryboard */; };
 		0087E4E5297F318400F516F9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087E4E4297F318400F516F9 /* DIContainer.swift */; };
@@ -69,6 +73,9 @@
 		0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProductsUseCase.swift; sourceTree = "<group>"; };
 		0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductUseCase.swift; sourceTree = "<group>"; };
 		005D55BA297F345900FD5B6D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		005D55CD297F6A9900FD5B6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		005D55D1297F6AC500FD5B6D /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		005D55D4297F6C9600FD5B6D /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Modak-Regular.ttf"; sourceTree = "<group>"; };
 		0087E4E4297F318400F516F9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +86,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0087E4E3297F314B00F516F9 /* SwinjectStoryboard in Frameworks */,
+				005D55CA297F666800FD5B6D /* Bond in Frameworks */,
 				0027F8E9297EB817000DAD0D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +179,7 @@
 		0027F8DB297EB480000DAD0D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				005D55D3297F6C6E00FD5B6D /* Utils */,
 				0027F8E3297EB50F000DAD0D /* ProductDetail */,
 				0027F8E2297EB505000DAD0D /* Home */,
 				0027F8E1297EB4FE000DAD0D /* Login */,
@@ -237,6 +246,8 @@
 		0027F8E2297EB505000DAD0D /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				005D55CD297F6A9900FD5B6D /* HomeViewController.swift */,
+				005D55D1297F6AC500FD5B6D /* Home.storyboard */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -265,6 +276,14 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		005D55D3297F6C6E00FD5B6D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				005D55D4297F6C9600FD5B6D /* UIViewController+Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,6 +303,7 @@
 			packageProductDependencies = (
 				0027F8E8297EB817000DAD0D /* Alamofire */,
 				0087E4E2297F314B00F516F9 /* SwinjectStoryboard */,
+				005D55C9297F666800FD5B6D /* Bond */,
 			);
 			productName = ProductsAppTestTask;
 			productReference = 0027F8A6297EAF1F000DAD0D /* ProductsAppTestTask.app */;
@@ -360,6 +380,7 @@
 			packageReferences = (
 				0027F8E7297EB817000DAD0D /* XCRemoteSwiftPackageReference "Alamofire" */,
 				0087E4E1297F314B00F516F9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */,
+				005D55C8297F666700FD5B6D /* XCRemoteSwiftPackageReference "Bond" */,
 			);
 			productRefGroup = 0027F8A7297EAF1F000DAD0D /* Products */;
 			projectDirPath = "";
@@ -378,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0087E4E0297F2F1000F516F9 /* Modak-Regular.ttf in Resources */,
+				005D55D2297F6AC500FD5B6D /* Home.storyboard in Resources */,
 				0027F8B6297EAF22000DAD0D /* LaunchScreen.storyboard in Resources */,
 				0027F8B3297EAF22000DAD0D /* Assets.xcassets in Resources */,
 				0027F8B1297EAF1F000DAD0D /* Login.storyboard in Resources */,
@@ -415,7 +437,9 @@
 				0027F8F0297EC54A000DAD0D /* ProductsRepositoryProtocol.swift in Sources */,
 				005D55BB297F345900FD5B6D /* LoginViewModel.swift in Sources */,
 				0027F8ED297EB97E000DAD0D /* Endpoints.swift in Sources */,
+				005D55D5297F6C9600FD5B6D /* UIViewController+Extensions.swift in Sources */,
 				0027F8E6297EB7FA000DAD0D /* APIClient.swift in Sources */,
+				005D55CF297F6A9900FD5B6D /* HomeViewController.swift in Sources */,
 				0027F8F2297EC5EB000DAD0D /* ProductsRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -768,6 +792,14 @@
 				kind = branch;
 			};
 		};
+		005D55C8297F666700FD5B6D /* XCRemoteSwiftPackageReference "Bond" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DeclarativeHub/Bond";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		0087E4E1297F314B00F516F9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Swinject/SwinjectStoryboard.git";
@@ -783,6 +815,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0027F8E7297EB817000DAD0D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		005D55C9297F666800FD5B6D /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 005D55C8297F666700FD5B6D /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
 		};
 		0087E4E2297F314B00F516F9 /* SwinjectStoryboard */ = {
 			isa = XCSwiftPackageProductDependency;

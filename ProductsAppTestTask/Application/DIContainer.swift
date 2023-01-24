@@ -11,10 +11,13 @@ import Swinject
 
 struct DIContainer {
     static func setup(_ container: Container) {
-        container.storyboardInitCompleted(LoginViewController.self) { resolver, controller in
-            controller.viewModel = resolver.resolve(LoginViewModelProtocol.self)
+        container.storyboardInitCompleted(HomeViewController.self) { resolver, controller in
+            
         }
-        container.register(LoginViewModelProtocol.self) { service in
+        container.storyboardInitCompleted(LoginViewController.self) { resolver, controller in
+            controller.viewModel = resolver.resolve(LoginViewModel.self)
+        }
+        container.register(LoginViewModel.self) { service in
             LoginViewModel()
         }
         container.register(GetAllProductsUseCaseProtocol.self) { service in
