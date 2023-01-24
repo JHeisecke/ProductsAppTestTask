@@ -47,7 +47,6 @@ struct ApiClient {
                      parameters: parameters,
                      encoding: encoding.alamofire,
                      headers: headers)
-            .validate(statusCode: 200..<305)
             .response { response in
                 switch response.result {
                 case .success(let data):

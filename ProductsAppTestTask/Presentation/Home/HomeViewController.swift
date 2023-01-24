@@ -72,8 +72,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let storyboard = UIStoryboard(name: "", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "")
+        guard let vc = UIStoryboard(name: "ProductDetail", bundle: nil).instantiateInitialViewController() as? ProductDetailViewController else { return }
+        vc.product = productList?[indexPath.row]
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

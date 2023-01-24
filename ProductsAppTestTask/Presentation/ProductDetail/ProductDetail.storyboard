@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="m26-3z-BTy">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GlacialIndifference-Bold.otf">
+            <string>GlacialIndifference-Bold</string>
+        </array>
+        <array key="GlacialIndifference-Regular.otf">
+            <string>GlacialIndifference-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Product Detail View Controller-->
+        <scene sceneID="01g-7l-sxG">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetail" id="m26-3z-BTy" customClass="ProductDetailViewController" customModule="ProductsAppTestTask" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="n3W-tX-vyA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CDx-37-ERy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test-image" translatesAutoresizingMaskIntoConstraints="NO" id="JLW-AU-Gs3">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="vTJ-uM-4IG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aSW-7a-HYa">
+                                        <rect key="frame" x="10" y="320" width="355" height="130"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASj-jK-5ur">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="41"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Producto Producto Producto Producto Producto" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03H-oV-vHK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="313.5" height="41"/>
+                                                        <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzD-Nt-4hC">
+                                                        <rect key="frame" x="313.5" y="0.0" width="41.5" height="41"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="28.5" id="xuP-7Q-Plr"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="wzD-Nt-4hC" firstAttribute="leading" secondItem="03H-oV-vHK" secondAttribute="trailing" id="0iw-BG-DZp"/>
+                                                    <constraint firstAttribute="trailing" secondItem="wzD-Nt-4hC" secondAttribute="trailing" id="DOr-Oa-PGK"/>
+                                                    <constraint firstItem="03H-oV-vHK" firstAttribute="leading" secondItem="ASj-jK-5ur" secondAttribute="leading" id="uJ1-mm-fzM"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaJ-ui-hgY">
+                                                <rect key="frame" x="0.0" y="53" width="355" height="77"/>
+                                                <string key="text">Esta es una descripción para el producto que tenes en pantalla, también es una descripción multilinea, es decir, el texto no es contenido solamente en una linea.</string>
+                                                <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="LaJ-ui-hgY" secondAttribute="trailing" id="Yjm-Qg-Qbm"/>
+                                            <constraint firstItem="ASj-jK-5ur" firstAttribute="leading" secondItem="aSW-7a-HYa" secondAttribute="leading" id="gw6-lI-FCH"/>
+                                            <constraint firstItem="LaJ-ui-hgY" firstAttribute="leading" secondItem="aSW-7a-HYa" secondAttribute="leading" id="xgv-vS-isg"/>
+                                            <constraint firstAttribute="trailing" secondItem="ASj-jK-5ur" secondAttribute="trailing" id="yhG-g4-emM"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-OX-IdI">
+                                        <rect key="frame" x="97.5" y="500" width="180" height="50"/>
+                                        <color key="backgroundColor" name="brand-foreground"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="b5h-M4-WLk"/>
+                                            <constraint firstAttribute="height" constant="50" id="jVH-rX-Xpy"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Add to Cart">
+                                            <color key="titleColor" name="brand-font"/>
+                                        </state>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q1y-8N-cME">
+                                        <rect key="frame" x="305" y="25" width="40" height="20"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="star.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hYj-Ak-WoV">
+                                                <rect key="frame" x="2" y="2" width="15" height="15"/>
+                                                <color key="tintColor" systemColor="systemYellowColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="15" id="8ic-xd-csd"/>
+                                                    <constraint firstAttribute="height" constant="15" id="wwT-mW-9Ev"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4.3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w6i-ca-c3h">
+                                                <rect key="frame" x="18" y="3" width="17" height="14.5"/>
+                                                <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="hYj-Ak-WoV" firstAttribute="centerY" secondItem="q1y-8N-cME" secondAttribute="centerY" id="11k-YD-87q"/>
+                                            <constraint firstAttribute="width" constant="40" id="EtK-re-Cbv"/>
+                                            <constraint firstItem="w6i-ca-c3h" firstAttribute="centerY" secondItem="hYj-Ak-WoV" secondAttribute="centerY" id="K9Z-NK-94z"/>
+                                            <constraint firstAttribute="height" constant="20" id="N7x-ov-0Kj"/>
+                                            <constraint firstItem="hYj-Ak-WoV" firstAttribute="leading" secondItem="q1y-8N-cME" secondAttribute="leading" constant="2" id="THe-W5-gOF"/>
+                                            <constraint firstItem="w6i-ca-c3h" firstAttribute="leading" secondItem="hYj-Ak-WoV" secondAttribute="trailing" constant="1" id="p9o-As-I9E"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="q1y-8N-cME" firstAttribute="top" secondItem="CDx-37-ERy" secondAttribute="top" constant="25" id="7Jx-iV-YuH"/>
+                                    <constraint firstItem="aSW-7a-HYa" firstAttribute="top" secondItem="JLW-AU-Gs3" secondAttribute="bottom" constant="20" id="9r0-S2-FW7"/>
+                                    <constraint firstItem="SIZ-OX-IdI" firstAttribute="top" secondItem="aSW-7a-HYa" secondAttribute="bottom" constant="50" id="FQm-Nn-Zpk"/>
+                                    <constraint firstAttribute="trailing" secondItem="JLW-AU-Gs3" secondAttribute="trailing" id="PC3-Iz-1Xs"/>
+                                    <constraint firstAttribute="trailing" secondItem="q1y-8N-cME" secondAttribute="trailing" constant="30" id="UP9-Tp-Q7W"/>
+                                    <constraint firstItem="aSW-7a-HYa" firstAttribute="leading" secondItem="CDx-37-ERy" secondAttribute="leading" constant="10" id="aqf-aS-Ul3"/>
+                                    <constraint firstAttribute="trailing" secondItem="aSW-7a-HYa" secondAttribute="trailing" constant="10" id="fUZ-7f-VNr"/>
+                                    <constraint firstItem="SIZ-OX-IdI" firstAttribute="centerX" secondItem="CDx-37-ERy" secondAttribute="centerX" id="ibA-G1-Dwd"/>
+                                    <constraint firstItem="JLW-AU-Gs3" firstAttribute="top" secondItem="CDx-37-ERy" secondAttribute="top" id="kcZ-0G-2il"/>
+                                    <constraint firstItem="JLW-AU-Gs3" firstAttribute="leading" secondItem="CDx-37-ERy" secondAttribute="leading" id="xEH-kQ-YVK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DJC-KG-lq3"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DJC-KG-lq3" firstAttribute="bottom" secondItem="CDx-37-ERy" secondAttribute="bottom" id="KeS-LW-43c"/>
+                            <constraint firstItem="DJC-KG-lq3" firstAttribute="trailing" secondItem="CDx-37-ERy" secondAttribute="trailing" id="Pbq-xy-p9b"/>
+                            <constraint firstItem="CDx-37-ERy" firstAttribute="leading" secondItem="DJC-KG-lq3" secondAttribute="leading" id="RFL-dE-clT"/>
+                            <constraint firstItem="CDx-37-ERy" firstAttribute="top" secondItem="DJC-KG-lq3" secondAttribute="top" id="sNU-L1-GXb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addToCartButton" destination="SIZ-OX-IdI" id="LGO-EA-Aa5"/>
+                        <outlet property="productDescription" destination="LaJ-ui-hgY" id="CbK-Cp-aP5"/>
+                        <outlet property="productImage" destination="JLW-AU-Gs3" id="OCN-cr-7aA"/>
+                        <outlet property="productPrice" destination="wzD-Nt-4hC" id="Gxg-fT-fQY"/>
+                        <outlet property="productTitle" destination="03H-oV-vHK" id="w6O-fi-5mE"/>
+                        <outlet property="ratingLabel" destination="w6i-ca-c3h" id="qx9-pE-atD"/>
+                        <outlet property="ratingView" destination="q1y-8N-cME" id="Egl-7u-Fdx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SeO-Yr-7qJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="713" y="3"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="test-image" width="1049" height="1500"/>
+        <namedColor name="brand-font">
+            <color red="0.23529411764705882" green="0.17254901960784313" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="brand-foreground">
+            <color red="1" green="0.67450980392156867" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
