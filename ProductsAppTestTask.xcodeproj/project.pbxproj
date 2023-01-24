@@ -12,7 +12,7 @@
 		0027F8B1297EAF1F000DAD0D /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0027F8AF297EAF1F000DAD0D /* Login.storyboard */; };
 		0027F8B3297EAF22000DAD0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0027F8B2297EAF22000DAD0D /* Assets.xcassets */; };
 		0027F8B6297EAF22000DAD0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0027F8B4297EAF22000DAD0D /* LaunchScreen.storyboard */; };
-		0027F8C1297EAF22000DAD0D /* ProductsAppTestTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8C0297EAF22000DAD0D /* ProductsAppTestTaskTests.swift */; };
+		0027F8C1297EAF22000DAD0D /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8C0297EAF22000DAD0D /* LoginViewModelTests.swift */; };
 		0027F8CB297EAF22000DAD0D /* ProductsAppTestTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8CA297EAF22000DAD0D /* ProductsAppTestTaskUITests.swift */; };
 		0027F8CD297EAF22000DAD0D /* ProductsAppTestTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8CC297EAF22000DAD0D /* ProductsAppTestTaskUITestsLaunchTests.swift */; };
 		0027F8E6297EB7FA000DAD0D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8E5297EB7FA000DAD0D /* APIClient.swift */; };
@@ -40,6 +40,13 @@
 		005D55DE297F770600FD5B6D /* GlacialIndifference-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 005D55DA297F770600FD5B6D /* GlacialIndifference-Bold.otf */; };
 		0087E4E3297F314B00F516F9 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 0087E4E2297F314B00F516F9 /* SwinjectStoryboard */; };
 		0087E4E5297F318400F516F9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087E4E4297F318400F516F9 /* DIContainer.swift */; };
+		00F292C829805C2E00C6D5D5 /* ProductsRepositoryStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F292C729805C2E00C6D5D5 /* ProductsRepositoryStub.swift */; };
+		00F292CB298060A500C6D5D5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 00F292CA298060A500C6D5D5 /* Alamofire */; };
+		00F292CD298060AA00C6D5D5 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 00F292CC298060AA00C6D5D5 /* SwinjectStoryboard */; };
+		00F292CF298060AD00C6D5D5 /* Bond in Frameworks */ = {isa = PBXBuildFile; productRef = 00F292CE298060AD00C6D5D5 /* Bond */; };
+		00F292D1298060AF00C6D5D5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 00F292D0298060AF00C6D5D5 /* Kingfisher */; };
+		00F292D3298061A000C6D5D5 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F292D2298061A000C6D5D5 /* HomeViewModelTests.swift */; };
+		00F292D5298062C300C6D5D5 /* ProductDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F292D4298062C300C6D5D5 /* ProductDetailViewModelTests.swift */; };
 		29D7E835298034FB0004C50F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29D7E834298034FA0004C50F /* HomeViewModel.swift */; };
 		29D7E83D298035630004C50F /* CategoryCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29D7E839298035630004C50F /* CategoryCollectionViewCell.xib */; };
 		29D7E83E298035630004C50F /* ProductCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29D7E83A298035630004C50F /* ProductCollectionViewCell.xib */; };
@@ -74,7 +81,7 @@
 		0027F8B5297EAF22000DAD0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0027F8B7297EAF22000DAD0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0027F8BC297EAF22000DAD0D /* ProductsAppTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsAppTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0027F8C0297EAF22000DAD0D /* ProductsAppTestTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAppTestTaskTests.swift; sourceTree = "<group>"; };
+		0027F8C0297EAF22000DAD0D /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
 		0027F8C6297EAF22000DAD0D /* ProductsAppTestTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProductsAppTestTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0027F8CA297EAF22000DAD0D /* ProductsAppTestTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAppTestTaskUITests.swift; sourceTree = "<group>"; };
 		0027F8CC297EAF22000DAD0D /* ProductsAppTestTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsAppTestTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -100,6 +107,9 @@
 		005D55D9297F770600FD5B6D /* GlacialIndifference-Italic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Italic.otf"; sourceTree = "<group>"; };
 		005D55DA297F770600FD5B6D /* GlacialIndifference-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GlacialIndifference-Bold.otf"; sourceTree = "<group>"; };
 		0087E4E4297F318400F516F9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		00F292C729805C2E00C6D5D5 /* ProductsRepositoryStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsRepositoryStub.swift; sourceTree = "<group>"; };
+		00F292D2298061A000C6D5D5 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		00F292D4298062C300C6D5D5 /* ProductDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewModelTests.swift; sourceTree = "<group>"; };
 		29D7E834298034FA0004C50F /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		29D7E839298035630004C50F /* CategoryCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CategoryCollectionViewCell.xib; sourceTree = "<group>"; };
 		29D7E83A298035630004C50F /* ProductCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProductCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -123,6 +133,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00F292D1298060AF00C6D5D5 /* Kingfisher in Frameworks */,
+				00F292CD298060AA00C6D5D5 /* SwinjectStoryboard in Frameworks */,
+				00F292CF298060AD00C6D5D5 /* Bond in Frameworks */,
+				00F292CB298060A500C6D5D5 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +157,7 @@
 				0027F8BF297EAF22000DAD0D /* ProductsAppTestTaskTests */,
 				0027F8C9297EAF22000DAD0D /* ProductsAppTestTaskUITests */,
 				0027F8A7297EAF1F000DAD0D /* Products */,
+				00F292C9298060A500C6D5D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -171,7 +186,10 @@
 		0027F8BF297EAF22000DAD0D /* ProductsAppTestTaskTests */ = {
 			isa = PBXGroup;
 			children = (
-				0027F8C0297EAF22000DAD0D /* ProductsAppTestTaskTests.swift */,
+				00F292C629805C1100C6D5D5 /* Stubs */,
+				0027F8C0297EAF22000DAD0D /* LoginViewModelTests.swift */,
+				00F292D2298061A000C6D5D5 /* HomeViewModelTests.swift */,
+				00F292D4298062C300C6D5D5 /* ProductDetailViewModelTests.swift */,
 			);
 			path = ProductsAppTestTaskTests;
 			sourceTree = "<group>";
@@ -338,6 +356,21 @@
 			path = "glacial-indifference";
 			sourceTree = "<group>";
 		};
+		00F292C629805C1100C6D5D5 /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				00F292C729805C2E00C6D5D5 /* ProductsRepositoryStub.swift */,
+			);
+			path = Stubs;
+			sourceTree = "<group>";
+		};
+		00F292C9298060A500C6D5D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		29D7E838298035570004C50F /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,6 +422,12 @@
 				0027F8BE297EAF22000DAD0D /* PBXTargetDependency */,
 			);
 			name = ProductsAppTestTaskTests;
+			packageProductDependencies = (
+				00F292CA298060A500C6D5D5 /* Alamofire */,
+				00F292CC298060AA00C6D5D5 /* SwinjectStoryboard */,
+				00F292CE298060AD00C6D5D5 /* Bond */,
+				00F292D0298060AF00C6D5D5 /* Kingfisher */,
+			);
 			productName = ProductsAppTestTaskTests;
 			productReference = 0027F8BC297EAF22000DAD0D /* ProductsAppTestTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -528,7 +567,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0027F8C1297EAF22000DAD0D /* ProductsAppTestTaskTests.swift in Sources */,
+				0027F8C1297EAF22000DAD0D /* LoginViewModelTests.swift in Sources */,
+				00F292D5298062C300C6D5D5 /* ProductDetailViewModelTests.swift in Sources */,
+				00F292C829805C2E00C6D5D5 /* ProductsRepositoryStub.swift in Sources */,
+				00F292D3298061A000C6D5D5 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -915,6 +957,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 0087E4E1297F314B00F516F9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
 			productName = SwinjectStoryboard;
+		};
+		00F292CA298060A500C6D5D5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0027F8E7297EB817000DAD0D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		00F292CC298060AA00C6D5D5 /* SwinjectStoryboard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0087E4E1297F314B00F516F9 /* XCRemoteSwiftPackageReference "SwinjectStoryboard" */;
+			productName = SwinjectStoryboard;
+		};
+		00F292CE298060AD00C6D5D5 /* Bond */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 005D55C8297F666700FD5B6D /* XCRemoteSwiftPackageReference "Bond" */;
+			productName = Bond;
+		};
+		00F292D0298060AF00C6D5D5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 29D7E841298036290004C50F /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 		29D7E842298036290004C50F /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
