@@ -39,6 +39,10 @@ class HomeViewController: UIViewController {
         )
     }
     
+    @objc func logout() {
+        self.setRootViewController("Login")
+    }
+    
 }
 
 //MARK: Set up
@@ -47,6 +51,7 @@ extension HomeViewController {
     
     private func setupUI() {
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.init(systemName: "cart"), style: .plain, target: self, action: #selector(clearCart))
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "logout-icon"), style: .plain, target: self, action: #selector(logout))
         configActivityIndicator()
         setupCollectionView()
     }
