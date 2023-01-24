@@ -41,6 +41,8 @@ class HomeViewController: UIViewController {
     
 }
 
+//MARK: Set up
+
 extension HomeViewController {
     
     private func setupUI() {
@@ -84,6 +86,8 @@ extension HomeViewController {
     
 }
 
+//MARK: - UICollectionViewDelegate, UICollectionViewDataSource
+
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
     
@@ -118,6 +122,8 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
 }
 
+// MARK: - Navigation
+
 extension HomeViewController {
     
     override func show(_ vc: UIViewController, sender: Any?) {
@@ -126,6 +132,8 @@ extension HomeViewController {
         self.navigationController?.show(vc, sender: nil)
     }
 }
+
+//MARK: - UICollectionViewDelegateFlowLayout
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
     
