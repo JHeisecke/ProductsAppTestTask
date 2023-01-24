@@ -25,6 +25,8 @@
 		0027F8F6297ECCB6000DAD0D /* GetAllProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */; };
 		0027F8F8297ECDBF000DAD0D /* GetProductUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */; };
 		005D55BB297F345900FD5B6D /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55BA297F345900FD5B6D /* LoginViewModel.swift */; };
+		005D55C5297F5A5400FD5B6D /* UITextField+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55C4297F5A5400FD5B6D /* UITextField+Extensions.swift */; };
+		005D55C7297F5D9E00FD5B6D /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 005D55C6297F5D9E00FD5B6D /* CustomButton.swift */; };
 		0087E4E0297F2F1000F516F9 /* Modak-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */; };
 		0087E4E3297F314B00F516F9 /* SwinjectStoryboard in Frameworks */ = {isa = PBXBuildFile; productRef = 0087E4E2297F314B00F516F9 /* SwinjectStoryboard */; };
 		0087E4E5297F318400F516F9 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0087E4E4297F318400F516F9 /* DIContainer.swift */; };
@@ -69,6 +71,8 @@
 		0027F8F5297ECCB6000DAD0D /* GetAllProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetAllProductsUseCase.swift; sourceTree = "<group>"; };
 		0027F8F7297ECDBF000DAD0D /* GetProductUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductUseCase.swift; sourceTree = "<group>"; };
 		005D55BA297F345900FD5B6D /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		005D55C4297F5A5400FD5B6D /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
+		005D55C6297F5D9E00FD5B6D /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		0087E4DF297F2EC900F516F9 /* Modak-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Modak-Regular.ttf"; sourceTree = "<group>"; };
 		0087E4E4297F318400F516F9 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -171,8 +175,8 @@
 		0027F8DB297EB480000DAD0D /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				005D55C3297F5A2E00FD5B6D /* Utils */,
 				0027F8E3297EB50F000DAD0D /* ProductDetail */,
-				0027F8E2297EB505000DAD0D /* Home */,
 				0027F8E1297EB4FE000DAD0D /* Login */,
 				0027F8DD297EB49F000DAD0D /* Resources */,
 				0027F8B4297EAF22000DAD0D /* LaunchScreen.storyboard */,
@@ -234,13 +238,6 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		0027F8E2297EB505000DAD0D /* Home */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Home;
-			sourceTree = "<group>";
-		};
 		0027F8E3297EB50F000DAD0D /* ProductDetail */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,6 +260,15 @@
 				0027F8F1297EC5EB000DAD0D /* ProductsRepository.swift */,
 			);
 			path = Repository;
+			sourceTree = "<group>";
+		};
+		005D55C3297F5A2E00FD5B6D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				005D55C4297F5A5400FD5B6D /* UITextField+Extensions.swift */,
+				005D55C6297F5D9E00FD5B6D /* CustomButton.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +411,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				005D55C5297F5A5400FD5B6D /* UITextField+Extensions.swift in Sources */,
+				005D55C7297F5D9E00FD5B6D /* CustomButton.swift in Sources */,
 				0027F8AE297EAF1F000DAD0D /* LoginViewController.swift in Sources */,
 				0027F8EB297EB886000DAD0D /* APIError.swift in Sources */,
 				0027F8F8297ECDBF000DAD0D /* GetProductUseCase.swift in Sources */,
