@@ -24,6 +24,10 @@ class HomeViewController: UIViewController {
         fetchData()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel?.setEnabledCart()
+    }
+    
     @objc func clearCart() {
         self.simpleAlert(
             title: "Clear Cart",
