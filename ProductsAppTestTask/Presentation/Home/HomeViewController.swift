@@ -31,7 +31,7 @@ class HomeViewController: UIViewController {
     @objc func clearCart() {
         self.simpleAlert(
             title: "Clear Cart",
-            message: "You will be removing \(AppData.cart.products.count) products off you cart",
+            message: "You will be removing \(AppData.cart.products.count) products off your cart",
             completion: { [weak self] _ in
                 guard let self else { return }
                 self.viewModel?.clearCart()
