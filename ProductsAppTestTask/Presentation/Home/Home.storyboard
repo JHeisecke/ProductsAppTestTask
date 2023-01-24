@@ -3,10 +3,16 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="GlacialIndifference-Bold.otf">
+            <string>GlacialIndifference-Bold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Home-->
         <scene sceneID="s0d-6b-0kx">
@@ -19,13 +25,34 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="68I-M6-Jeh">
                                 <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lcw-ai-LSP">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Lcw-ai-LSP">
                                     <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="HeaderCollectionViewID" id="5n6-ho-7dz" customClass="HeaderCollectionView" customModule="ProductsAppTestTask" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="List of products" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWc-4H-VsK">
+                                            <rect key="frame" x="120.66666666666667" y="12.333333333333334" width="151.66666666666663" height="25.333333333333329"/>
+                                            <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="21"/>
+                                            <color key="textColor" name="brand-font"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ZWc-4H-VsK" firstAttribute="centerY" secondItem="5n6-ho-7dz" secondAttribute="centerY" id="1Sc-Kv-WJZ"/>
+                                        <constraint firstItem="ZWc-4H-VsK" firstAttribute="top" secondItem="5n6-ho-7dz" secondAttribute="topMargin" constant="4.3300000000000001" id="B4I-V2-agU"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="ZWc-4H-VsK" secondAttribute="bottom" constant="4.3300000000000001" id="nvQ-89-B26"/>
+                                        <constraint firstItem="ZWc-4H-VsK" firstAttribute="centerX" secondItem="5n6-ho-7dz" secondAttribute="centerX" id="qLo-wO-L3H"/>
+                                    </constraints>
+                                    <connections>
+                                        <outlet property="title" destination="ZWc-4H-VsK" id="I3N-qq-HyZ"/>
+                                    </connections>
+                                </collectionReusableView>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -77,6 +104,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="brand-font">
+            <color red="0.23529411764705882" green="0.17254901960784313" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

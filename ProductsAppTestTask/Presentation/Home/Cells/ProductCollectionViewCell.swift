@@ -21,6 +21,8 @@ class ProductCollectionViewCell: UICollectionViewCell {
     
     private func setupUI() {
         self.layer.cornerRadius = 15
+        self.layer.borderColor = UIColor(named: "brand-background")?.cgColor
+        self.layer.borderWidth = 1
     }
     
     func configure(product: Product) {

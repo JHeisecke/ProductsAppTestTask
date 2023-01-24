@@ -18,14 +18,30 @@ class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupCollectionView()
+        setupUI()
         setupObservables()
         fetchData()
-        // Do any additional setup after loading the view.
     }
+    
+    @objc func clearCart() {
+        self.simpleAlert(
+            title: "Clear Cart",
+            message: "You will be removing \(AppData.cart.products.count) products off you cart",
+            completion: { [weak self] _ in
+                guard let self else { return }
+                self.viewModel?.clearCart()
+            }
+        )
+    }
+    
 }
 
 extension HomeViewController {
+    
+    private func setupUI() {
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.init(systemName: "cart"), style: .plain, target: self, action: #selector(clearCart))
+        setupCollectionView()
+    }
     
     private func fetchData() {
         viewModel?.getAllProducts()
@@ -38,6 +54,8 @@ extension HomeViewController {
     }
     
     private func setupObservables() {
+        viewModel?.enableCart.bind(to: navigationItem.rightBarButtonItem!.reactive.isEnabled)
+
         viewModel?.allProducts.observeNext(with: { [weak self] productList in
             guard let productList = productList else { return }
             if productList.count > 0 {
@@ -52,12 +70,6 @@ extension HomeViewController {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
-        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
-        let size:CGFloat = (collectionView.frame.size.width - space) / 2.0
-        return CGSize(width: size, height: size)
-    }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.productList?.count ?? 0
@@ -67,9 +79,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProductCell", for: indexPath) as? ProductCollectionViewCell else { return UICollectionViewCell()}
         
         guard let product = productList?[indexPath.row] else { return UICollectionViewCell() }
-        
         cell.configure(product: product)
-        
         return cell
     }
     
@@ -78,6 +88,18 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         performSegue(withIdentifier: "goToProductDetail", sender: nil)
     }
     
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        switch kind {
+        case UICollectionView.elementKindSectionHeader:
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: "HeaderCollectionViewID", for: indexPath)
+            guard let typedHeaderView = headerView as? HeaderCollectionView
+            else { return headerView }
+            return typedHeaderView
+        default:
+            return UICollectionReusableView()
+        }
+    }
 }
 
 extension HomeViewController {
@@ -86,5 +108,32 @@ extension HomeViewController {
         guard let vc = vc as? ProductDetailViewController else { return }
         vc.product = selectedProduct
         self.navigationController?.show(vc, sender: nil)
+    }
+}
+
+extension HomeViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: 100, height: 50)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+
+        let flowLayout = collectionViewLayout as? UICollectionViewFlowLayout
+        let space = (flowLayout?.minimumInteritemSpacing ?? 0.0) + (flowLayout?.sectionInset.left ?? 0.0) + (flowLayout?.sectionInset.right ?? 0.0)
+        let size = (collectionView.frame.size.width - space) / 2.0
+        return CGSize(width: size - 25, height: size - 25)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 20
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
     }
 }

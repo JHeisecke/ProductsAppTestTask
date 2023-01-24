@@ -11,9 +11,11 @@ import ReactiveKit
 
 protocol HomeViewModelProtocol {
     func getAllProducts()
+    func clearCart()
     var allProducts: Observable<ProductsList?> { get }
     var product: Observable<Product?> { get }
     var error: Observable<ApiError?> { get }
+    var enableCart: Observable<Bool> { get }
 }
 
 struct HomeViewModel: HomeViewModelProtocol {
@@ -25,6 +27,7 @@ struct HomeViewModel: HomeViewModelProtocol {
     var allProducts: Observable<ProductsList?> = Observable(nil)
     var product: Observable<Product?> = Observable(nil)
     var error: Observable<ApiError?> = Observable(nil)
+    var enableCart: Observable<Bool> = Observable(AppData.cart.products.count > 0)
 
     init(getProductUseCase: GetProductDetailUseCaseProtocol, getAllProductsUseCase: GetAllProductsUseCaseProtocol) {
         self.getProductUseCase = getProductUseCase
@@ -37,6 +40,11 @@ struct HomeViewModel: HomeViewModelProtocol {
         } error: { apiError in
             self.error.value = apiError
         }
+    }
+    
+    func clearCart() {
+        AppData.cart = Cart()
+        enableCart.value = false
     }
     
 }
