@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwinjectStoryboard
 
 class HomeViewController: UIViewController {
     
@@ -13,6 +14,7 @@ class HomeViewController: UIViewController {
     
     var viewModel: HomeViewModelProtocol?
     var productList: ProductsList?
+    var selectedProduct: Product?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,9 +74,17 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        guard let vc = UIStoryboard(name: "ProductDetail", bundle: nil).instantiateInitialViewController() as? ProductDetailViewController else { return }
-        vc.product = productList?[indexPath.row]
-        self.navigationController?.pushViewController(vc, animated: true)
+        selectedProduct = productList?[indexPath.row]
+        performSegue(withIdentifier: "goToProductDetail", sender: nil)
     }
     
+}
+
+extension HomeViewController {
+    
+    override func show(_ vc: UIViewController, sender: Any?) {
+        guard let vc = vc as? ProductDetailViewController else { return }
+        vc.product = selectedProduct
+        self.navigationController?.show(vc, sender: nil)
+    }
 }

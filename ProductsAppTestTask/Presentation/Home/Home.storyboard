@@ -40,11 +40,22 @@
                     <navigationItem key="navigationItem" title="Home" id="t8w-rA-Fjq"/>
                     <connections>
                         <outlet property="collectionView" destination="68I-M6-Jeh" id="0jq-0e-GVh"/>
+                        <segue destination="iGr-nT-9iO" kind="show" identifier="goToProductDetail" id="vs7-vN-0xh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="907.63358778625945" y="3.5211267605633805"/>
+        </scene>
+        <!--ProductDetail-->
+        <scene sceneID="dxQ-aw-Dmu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ProductDetail" id="iGr-nT-9iO" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="ieB-Dg-51r"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u4u-AE-zTI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2089" y="-375"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qcD-0d-kvk">

@@ -12,16 +12,22 @@ import Swinject
 struct DIContainer {
     static func setup(_ container: Container) {
         container.storyboardInitCompleted(LoginViewController.self) { resolver, controller in
-            controller.viewModel = resolver.resolve(LoginViewModel.self)
+            controller.viewModel = resolver.resolve(LoginViewModelProtocol.self)
         }
         container.storyboardInitCompleted(HomeViewController.self) { resolver, controller in
             controller.viewModel = resolver.resolve(HomeViewModelProtocol.self)
         }
-        container.register(LoginViewModel.self) { service in
+        container.storyboardInitCompleted(ProductDetailViewController.self) { resolver, controller in
+            controller.viewModel = resolver.resolve(ProductDetailViewModelProtocol.self)
+        }
+        container.register(LoginViewModelProtocol.self) { service in
             LoginViewModel()
         }
         container.register(HomeViewModelProtocol.self) { service in
             HomeViewModel(getProductUseCase: service.resolve(GetProductDetailUseCaseProtocol.self)!, getAllProductsUseCase: service.resolve(GetAllProductsUseCaseProtocol.self)!)
+        }
+        container.register(ProductDetailViewModelProtocol.self) { service in
+            ProductDetailViewModel()
         }
         container.register(GetAllProductsUseCaseProtocol.self) { service in
             GetAllProductsUseCase(repository: service.resolve(ProductsRepositoryProtocol.self)!)

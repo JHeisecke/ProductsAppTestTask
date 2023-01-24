@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import Bond
 
 class ProductDetailViewController: UIViewController {
 
@@ -18,18 +19,32 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var productDescription: UILabel!
     @IBOutlet weak var addToCartButton: UIButton!
     
+    var viewModel: ProductDetailViewModelProtocol?
     var product: Product?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         guard let product else { return }
         setupUI(for: product)
+        setupObservables()
+    }
+    
+    @objc func clearCart() {
+        self.simpleAlert(
+            title: "Clear Cart",
+            message: "You will be removing \(AppData.cart.products.count) products off you cart",
+            completion: { [weak self] _ in
+                guard let self else { return }
+                self.viewModel?.clearCart()
+            }
+        )
     }
 }
 
 private extension ProductDetailViewController {
     func setupUI(for product: Product) {
         title = product.category?.rawValue
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.init(systemName: "cart"), style: .plain, target: self, action: #selector(clearCart))
         productDescription.text = product.description
         productPrice.text = "$\(product.price ?? 0)"
         productTitle.text = product.title
@@ -50,6 +65,15 @@ private extension ProductDetailViewController {
             .cacheMemoryOnly()
             .fade(duration: 0.25)
             .set(to: productImage)
+    }
+    
+    func setupObservables() {
         
+        viewModel?.enableCart.bind(to: navigationItem.rightBarButtonItem!.reactive.isEnabled)
+        
+        addToCartButton.reactive.tap.observeNext { [weak self] _ in
+            guard let self, let productId = self.product?.id else { return }
+            self.viewModel?.addToCart(product: productId)
+        }.dispose(in: bag)
     }
 }

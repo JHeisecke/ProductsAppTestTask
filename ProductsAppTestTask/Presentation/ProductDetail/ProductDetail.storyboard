@@ -35,21 +35,24 @@
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aSW-7a-HYa">
-                                        <rect key="frame" x="10" y="320" width="355" height="130"/>
+                                        <rect key="frame" x="10" y="320" width="355" height="171"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ASj-jK-5ur">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="41"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="82"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="Producto Producto Producto Producto Producto" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03H-oV-vHK">
-                                                        <rect key="frame" x="0.0" y="0.0" width="313.5" height="41"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text=" dsajdaksjdbajksfbjsfbasdbfjlsadblfbdsafsaf sdfjasdfn fdsfsdfsdfasdg gfgdfagdfgd" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="03H-oV-vHK">
+                                                        <rect key="frame" x="0.0" y="0.0" width="290" height="82"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="290" id="3t7-Iw-4Df"/>
+                                                        </constraints>
                                                         <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$900" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wzD-Nt-4hC">
-                                                        <rect key="frame" x="313.5" y="0.0" width="41.5" height="41"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$17319.25" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="wzD-Nt-4hC">
+                                                        <rect key="frame" x="290" y="0.0" width="65" height="82"/>
                                                         <constraints>
-                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="28.5" id="xuP-7Q-Plr"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="xuP-7Q-Plr"/>
                                                         </constraints>
                                                         <fontDescription key="fontDescription" name="GlacialIndifference-Bold" family="Glacial Indifference" pointSize="17"/>
                                                         <nil key="textColor"/>
@@ -63,7 +66,7 @@
                                                 </constraints>
                                             </stackView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaJ-ui-hgY">
-                                                <rect key="frame" x="0.0" y="53" width="355" height="77"/>
+                                                <rect key="frame" x="0.0" y="94" width="355" height="77"/>
                                                 <string key="text">Esta es una descripción para el producto que tenes en pantalla, también es una descripción multilinea, es decir, el texto no es contenido solamente en una linea.</string>
                                                 <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="16"/>
                                                 <nil key="textColor"/>
@@ -78,7 +81,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-OX-IdI">
-                                        <rect key="frame" x="97.5" y="500" width="180" height="50"/>
+                                        <rect key="frame" x="97.5" y="541" width="180" height="50"/>
                                         <color key="backgroundColor" name="brand-foreground"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="180" id="b5h-M4-WLk"/>

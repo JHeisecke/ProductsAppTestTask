@@ -30,4 +30,16 @@ extension UIViewController {
                           completion: nil)
         
     }
+    
+    func simpleAlert(
+        title: String = "Message",
+        message: String,
+        confirmText: String = "Ok",
+        cancelText: String = "Cancel",
+        completion: @escaping (UIAlertAction) -> Void) {
+            let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: confirmText, style: .default, handler: completion))
+            alert.addAction(UIAlertAction(title: cancelText, style: .cancel, handler: nil))
+            self.present(alert, animated: true)
+        }
 }
