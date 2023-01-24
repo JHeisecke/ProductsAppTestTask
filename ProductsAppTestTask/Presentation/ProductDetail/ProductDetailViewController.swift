@@ -18,7 +18,7 @@ class ProductDetailViewController: UIViewController {
     @IBOutlet weak var productTitle: UILabel!
     @IBOutlet weak var productPrice: UILabel!
     @IBOutlet weak var productDescription: UILabel!
-    @IBOutlet weak var addToCartButton: UIButton!
+    @IBOutlet weak var addToCartButton: CustomButton!
     
     var viewModel: ProductDetailViewModelProtocol?
     var product: Product?

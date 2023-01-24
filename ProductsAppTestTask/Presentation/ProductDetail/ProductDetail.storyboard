@@ -111,7 +111,7 @@
                                                     <constraint firstAttribute="trailing" secondItem="ASj-jK-5ur" secondAttribute="trailing" id="yhG-g4-emM"/>
                                                 </constraints>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-OX-IdI">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SIZ-OX-IdI" customClass="CustomButton" customModule="ProductsAppTestTask" customModuleProvider="target">
                                                 <rect key="frame" x="105" y="250.66666666666663" width="180" height="50"/>
                                                 <color key="backgroundColor" name="brand-foreground"/>
                                                 <constraints>
@@ -175,6 +175,11 @@
             <point key="canvasLocation" x="713" y="3"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="SIZ-OX-IdI">
+            <size key="intrinsicContentSize" width="93" height="31"/>
+        </designable>
+    </designables>
     <resources>
         <image name="star.fill" catalog="system" width="128" height="116"/>
         <image name="test-image" width="1049" height="1500"/>

@@ -82,7 +82,7 @@
                                             </stackView>
                                         </subviews>
                                     </stackView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-fD-gUr">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3J7-fD-gUr" customClass="CustomButton" customModule="ProductsAppTestTask" customModuleProvider="target">
                                         <rect key="frame" x="106.66666666666669" y="423.33333333333331" width="180" height="50"/>
                                         <color key="backgroundColor" name="brand-foreground"/>
                                         <constraints>
@@ -130,6 +130,11 @@
             <point key="canvasLocation" x="60.305343511450381" y="-2.1126760563380285"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="3J7-fD-gUr">
+            <size key="intrinsicContentSize" width="51" height="31"/>
+        </designable>
+    </designables>
     <resources>
         <image name="store-front" width="42.666667938232422" height="42.666667938232422"/>
         <namedColor name="brand-background">
