@@ -9,7 +9,7 @@ import Foundation
 
 struct Endpoints {
     static func host() -> String {
-        return "https://fakestoreapi.com/"
+        return "https://fakestoreapi.com"
     }
 }
 

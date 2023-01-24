@@ -37,8 +37,7 @@ private extension LoginViewController {
         
         viewModel?.successLogin.observeNext(with: { [weak self] succesLogin in
             guard let succesLogin, succesLogin, let self else { return }
-            guard let viewController = UIStoryboard(name: "Home", bundle: nil).instantiateInitialViewController() else { return }
-            self.setRootViewController(viewController)
+            self.setRootViewController("Home")
         }).dispose(in: bag)
         
         loginButton.reactive.tap.observeNext(with: { [weak self] in
