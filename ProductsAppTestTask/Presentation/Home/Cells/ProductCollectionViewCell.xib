@@ -42,7 +42,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dRJ-eZ-axI">
                                 <rect key="frame" x="0.0" y="31.666666666666671" width="0.0" height="0.0"/>
-                                <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="9"/>
+                                <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="11"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -50,13 +50,13 @@
                                 <rect key="frame" x="0.0" y="36.666666666666671" width="118" height="22.333333333333329"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyy-Rm-wiv">
-                                        <rect key="frame" x="0.0" y="0.0" width="40.666666666666664" height="22.333333333333332"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="49.333333333333336" height="22.333333333333332"/>
                                         <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="12"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vqh-aK-mfJ">
-                                        <rect key="frame" x="40.666666666666664" y="0.0" width="77.333333333333343" height="22.333333333333332"/>
+                                        <rect key="frame" x="49.333333333333321" y="0.0" width="68.666666666666686" height="22.333333333333332"/>
                                         <fontDescription key="fontDescription" name="GlacialIndifference-Regular" family="Glacial Indifference" pointSize="10"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
